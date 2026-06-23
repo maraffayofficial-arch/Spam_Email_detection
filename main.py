@@ -5,6 +5,11 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 
+# Download NLTK data
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+
 ps=PorterStemmer()
 def transform_text(text):
     text=text.lower()
